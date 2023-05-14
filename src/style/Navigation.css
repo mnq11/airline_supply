@@ -27,6 +27,13 @@
     margin-right: 15px;
 }
 
+.companyName {
+    color: #cecbc1;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #C0C0C0;
+}
+
 .navLinks {
     display: flex;
     justify-content: space-between;
@@ -40,7 +47,7 @@
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navLink:hover {

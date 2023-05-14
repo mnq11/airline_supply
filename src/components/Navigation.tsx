@@ -11,6 +11,7 @@ const Navigation: React.FC = () => {
             <div className="navContent">
                 <Link to="/" className="logoContainer">
                     <img src={logo} alt="Company Logo" className="logo"/>
+                    <span className="companyName">ECHO SWIFT Ltd</span>
                 </Link>
                 <ul className="navLinks">
                     <li><Link to="/" className={location.pathname === "/" ? "navLink activeLink" : "navLink"}>Home</Link></li>

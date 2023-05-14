@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const ProductSection: React.FC = () => {
     const products = [
@@ -15,9 +15,33 @@ const ProductSection: React.FC = () => {
             image: '/img/product2.jpg',
             description: 'Biodegradable cutlery set made from sustainable materials.',
         },
+        {
+            id: 3,
+            title: 'Bamboo Cutlery Set',
+            image: '/img/product3.jpg',
+            description: 'Bamboo cutlery set for eco-friendly dining.',
+        },
+        {
+            id: 4,
+            title: 'Wooden Cutlery Set',
+            image: '/img/product4.jpg',
+            description: 'High-quality wooden cutlery set for eco-friendly dining.',
+        },
+        {
+            id: 5,
+            title: 'Bio Cutlery Set',
+            image: '/img/product5.jpg',
+            description: 'Biodegradable cutlery set made from sustainable materials.',
+        },
+        {
+            id: 6,
+            title: 'Bamboo Cutlery Set',
+            image: '/img/product6.jpg',
+            description: 'Bamboo cutlery set for eco-friendly dining.',
+
+        }
         // Add more products as needed
     ];
-
     const productGridStyle: React.CSSProperties = {
         display: 'grid',
         gridTemplateColumns: 'repeat(2, 1fr)',
@@ -30,16 +54,19 @@ const ProductSection: React.FC = () => {
         borderRadius: '4px',
         overflow: 'hidden',
         transition: 'transform 0.3s ease',
+        height: '300px', // Set a fixed height for the product card
     };
 
     const imageContainerStyle: React.CSSProperties = {
         position: 'relative',
         overflow: 'hidden',
+        height: '100%', // Set a height of 100% to fill the container
     };
 
     const imageStyle: React.CSSProperties = {
         width: '100%',
-        height: 'auto',
+        height: '100%', // Set the height to 100% to fill the container
+        objectFit: 'cover', // Adjust how the image is resized within the container
     };
 
     const overlayStyle: React.CSSProperties = {

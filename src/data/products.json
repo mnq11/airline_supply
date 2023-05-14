@@ -1,38 +1,44 @@
 [
   {
     "id": 1,
-    "title": "Wooden Cutlery Set",
+    "title": "Aluminum foil casserole",
     "image": "/img/product1.jpg",
-    "description": "High-quality wooden cutlery set for eco-friendly dining."
+    "description": "Our Aluminum Foil Casserole is designed to provide a convenient and efficient solution for serving meals during flights. Its high-quality construction ensures food stays warm and appetizing."
   },
   {
     "id": 2,
-    "title": "Bio Cutlery Set",
+    "title": "Plastic cup",
     "image": "/img/product2.jpg",
-    "description": "Biodegradable cutlery set made from sustainable materials."
+    "description": "Stay hydrated during your journey with our Plastic Cups. Lightweight, sturdy, and perfect for both hot and cold beverages."
   },
   {
     "id": 3,
-    "title": "Bamboo Cutlery Set",
+    "title": "Airsickness bag",
     "image": "/img/product3.jpg",
-    "description": "Bamboo cutlery set for eco-friendly dining."
+    "description": "For the comfort of our passengers, we provide Airsickness Bags designed for ease of use and quick access in case of motion sickness. Your wellness is our priority."
   },
   {
     "id": 4,
-    "title": "Wooden Cutlery Set",
+    "title": "Slipper",
     "image": "/img/product4.jpg",
-    "description": "High-quality wooden cutlery set for eco-friendly dining."
+    "description": "Enjoy your flight in comfort with our cozy slippers. Designed for optimal comfort and warmth, they're perfect for relaxing during long flights."
   },
   {
     "id": 5,
-    "title": "Bio Cutlery Set",
+    "title": "Wool blanket",
     "image": "/img/product5.jpg",
-    "description": "Biodegradable cutlery set made from sustainable materials."
+    "description": "Stay warm and comfortable with our Wool Blanket. Soft and lightweight, it's an essential companion for a pleasant and restful journey."
   },
   {
     "id": 6,
-    "title": "Bamboo Cutlery Set",
+    "title": "Economy In-ear Series Headphone",
     "image": "/img/product6.jpg",
-    "description": "Bamboo cutlery set for eco-friendly dining."
+    "description": "Enhance your in-flight entertainment experience with our Economy In-ear Series Headphones. Enjoy movies, music, and more in clear, high-quality audio."
+  },
+  {
+    "id": 7,
+    "title": "Tray",
+    "image": "/img/product7.jpg",
+    "description": "Our trays are designed for comfort and convenience, making meal times on your journey easier. Durable and easy to handle, they are perfect for in-flight dining."
   }
 ]

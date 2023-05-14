@@ -13,7 +13,7 @@ const ImageSlider: React.FC = () => {
     const legendStyle: React.CSSProperties = {
         background: 'rgba(0, 0, 0, 0.5)',
         color: '#fff',
-        padding: '10px',
+        padding: '0px',
         position: 'absolute',
         bottom: '20px',
         left: '50%',

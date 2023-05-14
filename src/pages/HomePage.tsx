@@ -5,11 +5,12 @@ import AboutUsCounter from '../components/AboutUsCounter';
 import InfoCard from '../components/InfoCard';
 import Banner from '../components/Banner';
 import '../style/HomePage.css';
+import Footer from "../components/Footer";
 
 const HomePage: React.FC = () => {
     return (
         <div className="homepage">
-            <ImageSlider />
+            <ImageSlider/>
             <div className="card-container">
                 <div className="card-row">
                     <InfoCard
@@ -32,10 +33,10 @@ const HomePage: React.FC = () => {
                     />
                 </div>
             </div>
-            <ProductSection />
-            <AboutUsCounter />
-            <Banner />
-
+            <ProductSection/>
+            <AboutUsCounter/>
+            <Banner/>
+            <Footer/>
         </div>
     );
 };

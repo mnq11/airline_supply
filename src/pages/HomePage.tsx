@@ -1,11 +1,13 @@
 import React from 'react';
 import ImageSlider from '../components/ImageSlider';
 import ProductSection from '../components/ProductSection';
-
+import AboutUsCounter from '../components/AboutUsCounter';
 const cardContainerStyle: React.CSSProperties = {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'flex-start',
+    marginTop: '20px', // Add a default margin top
+
 };
 
 const cardStyle: React.CSSProperties = {
@@ -28,7 +30,7 @@ const descriptionStyle: React.CSSProperties = {
     color: '#555',
 };
 
-const InfoCard: React.FC<{ title: string; description: string }> = ({ title, description }) => {
+const InfoCard: React.FC<{ title: string; description: string }> = ({title, description}) => {
     return (
         <div style={cardStyle}>
             <h2 style={titleStyle}>{title}</h2>
@@ -40,9 +42,9 @@ const InfoCard: React.FC<{ title: string; description: string }> = ({ title, des
 const HomePage: React.FC = () => {
     return (
         <div>
-            <ImageSlider />
-            <div style={cardContainerStyle}>
-                <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between' }}>
+            <ImageSlider/>
+            <div style={{ ...cardContainerStyle, marginTop: '-20px' }}>
+                <div style={{display: 'flex', width: '100%', justifyContent: 'space-between'}}>
                     <InfoCard
                         title="Service"
                         description="When you work with Flightparts, we offer you a complete service from initial idea to final product delivery."
@@ -52,7 +54,7 @@ const HomePage: React.FC = () => {
                         description="All products comply with the required safety regulations and are manufactured in factories, which are inspected by our quality assurance partners."
                     />
                 </div>
-                <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between' }}>
+                <div style={{display: 'flex', width: '100%', justifyContent: 'space-between'}}>
                     <InfoCard
                         title="Specialize"
                         description="We specialize in catering and comfort in-flight products; and onboard solutions to companies that serve people on the move. Our customers include top airlines around the world that rely on our expertise and solutions tailored to their guest, their service offerings and the geographic regions where they operate."
@@ -63,8 +65,8 @@ const HomePage: React.FC = () => {
                     />
                 </div>
             </div>
-            <ProductSection />
-
+            <ProductSection/>
+            <AboutUsCounter/>
         </div>
     );
 };

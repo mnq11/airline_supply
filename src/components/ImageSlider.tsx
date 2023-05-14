@@ -8,16 +8,7 @@ const ImageSlider: React.FC = () => {
         width: '100%',
         height: '100vh',
         overflow: 'hidden',
-    };
-
-    const legendStyle: React.CSSProperties = {
-        background: 'rgba(0, 0, 0, 0.5)',
-        color: '#fff',
-        padding: '0px',
-        position: 'absolute',
-        bottom: '20px',
-        left: '50%',
-        transform: 'translateX(-50%)',
+        marginBottom: '0px',
     };
 
     return (
@@ -38,7 +29,6 @@ const ImageSlider: React.FC = () => {
                         alt="Slide 1"
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
-                    <p style={legendStyle}>Slide 1</p>
                 </div>
                 <div>
                     <img
@@ -46,7 +36,6 @@ const ImageSlider: React.FC = () => {
                         alt="Slide 2"
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
-                    <p style={legendStyle}>Slide 2</p>
                 </div>
                 <div>
                     <img
@@ -54,7 +43,6 @@ const ImageSlider: React.FC = () => {
                         alt="Slide 3"
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
-                    <p style={legendStyle}>Slide 3</p>
                 </div>
             </Carousel>
         </div>

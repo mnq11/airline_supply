@@ -1,0 +1,8 @@
+.bounce-enter {
+    transform: scale(0.9);
+}
+
+.bounce-enter-active {
+    transform: scale(1);
+    transition: transform 500ms;
+}

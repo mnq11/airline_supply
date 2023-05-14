@@ -1,47 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import productsData from '../data/products.json';
 
+interface Product {
+    id: number;
+    title: string;
+    image: string;
+    description: string;
+}
 const ProductSection: React.FC = () => {
-    const products = [
-        {
-            id: 1,
-            title: 'Wooden Cutlery Set',
-            image: '/img/product1.jpg',
-            description: 'High-quality wooden cutlery set for eco-friendly dining.',
-        },
-        {
-            id: 2,
-            title: 'Bio Cutlery Set',
-            image: '/img/product2.jpg',
-            description: 'Biodegradable cutlery set made from sustainable materials.',
-        },
-        {
-            id: 3,
-            title: 'Bamboo Cutlery Set',
-            image: '/img/product3.jpg',
-            description: 'Bamboo cutlery set for eco-friendly dining.',
-        },
-        {
-            id: 4,
-            title: 'Wooden Cutlery Set',
-            image: '/img/product4.jpg',
-            description: 'High-quality wooden cutlery set for eco-friendly dining.',
-        },
-        {
-            id: 5,
-            title: 'Bio Cutlery Set',
-            image: '/img/product5.jpg',
-            description: 'Biodegradable cutlery set made from sustainable materials.',
-        },
-        {
-            id: 6,
-            title: 'Bamboo Cutlery Set',
-            image: '/img/product6.jpg',
-            description: 'Bamboo cutlery set for eco-friendly dining.',
+    const products: Product[] = productsData;
 
-        }
-        // Add more products as needed
-    ];
+
     const productGridStyle: React.CSSProperties = {
         display: 'grid',
         gridTemplateColumns: 'repeat(2, 1fr)',

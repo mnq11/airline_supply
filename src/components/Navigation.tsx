@@ -1,40 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import '../style/Navigation.css'; // Make sure to create this file
+import logo from './img/logo.jpg'; // Make sure to add your logo
 
 const Navigation: React.FC = () => {
-    const topNavStyle: React.CSSProperties = {
-        backgroundColor: '#333',
-        position: 'fixed',
-        top: 0,
-        width: '100%',
-        padding: '10px 0',
-        zIndex: 1,
-    };
-
-    const navLinksStyle: React.CSSProperties = {
-        listStyleType: 'none',
-        margin: 0,
-        padding: 0,
-        display: 'flex',
-        justifyContent: 'center',
-    };
-
-    const navLinkStyle: React.CSSProperties = {
-        color: '#fff',
-        textDecoration: 'none',
-        fontWeight: 'bold',
-        margin: '0 10px',
-    };
+    const location = useLocation();
 
     return (
-        <nav style={topNavStyle}>
-            <ul style={navLinksStyle}>
-                <li><Link to="/" style={navLinkStyle}>Home</Link></li>
-                <li><Link to="/about" style={navLinkStyle}>About</Link></li>
-                <li><Link to="/product" style={navLinkStyle}>Product</Link></li>
-                <li><Link to="/customer" style={navLinkStyle}>Customer</Link></li>
-                <li><Link to="/contact" style={navLinkStyle}>Contact</Link></li>
-            </ul>
+        <nav className="topNav">
+            <div className="navContent">
+                <Link to="/" className="logoContainer">
+                    <img src={logo} alt="Company Logo" className="logo"/>
+                </Link>
+                <ul className="navLinks">
+                    <li><Link to="/" className={location.pathname === "/" ? "navLink activeLink" : "navLink"}>Home</Link></li>
+                    <li><Link to="/about" className={location.pathname === "/about" ? "navLink activeLink" : "navLink"}>About</Link></li>
+                    <li><Link to="/product" className={location.pathname === "/product" ? "navLink activeLink" : "navLink"}>Product</Link></li>
+                    <li><Link to="/customer" className={location.pathname === "/customer" ? "navLink activeLink" : "navLink"}>Customer</Link></li>
+                    <li><Link to="/contact" className={location.pathname === "/contact" ? "navLink activeLink" : "navLink"}>Contact</Link></li>
+                </ul>
+            </div>
         </nav>
     );
 }

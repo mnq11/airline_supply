@@ -1,30 +1,77 @@
 .info-card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     width: calc(50% - 10px);
     background-color: #f5f5f5;
     border-radius: 4px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.info-count {
-    font-size: 2em;
-    color: #333;
+.info-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,123,255,0.1);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.info-card:hover:before {
+    transform: scaleY(1);
+}
+
+.info-card h2,
+.info-card p {
+    position: relative;
+    z-index: 2;
+}
+
+.info-card h2 {
     transition: color 0.3s ease;
 }
 
-.info-icon {
-    font-size: 3em;
-    color: #333;
-    transition: color 0.3s ease;
+.info-card p {
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.info-description {
-    font-size: 16px;
-    color: #555;
-    transition: color 0.3s ease;
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Add colors based on the title of the card */
+.info-card[data-title="Service"]:hover h2,
+.info-card[data-title="Service"]:hover:before {
+    color: #007BFF;
+    background: rgba(0,123,255,0.1);
+}
+
+.info-card[data-title="Safety"]:hover h2,
+.info-card[data-title="Safety"]:hover:before {
+    color: #28a745;
+    background: rgba(40,167,69,0.1);
+}
+
+.info-card[data-title="Specialize"]:hover h2,
+.info-card[data-title="Specialize"]:hover:before {
+    color: #ffc107;
+    background: rgba(255,193,7,0.1);
+}
+
+.info-card[data-title="Strategy"]:hover h2,
+.info-card[data-title="Strategy"]:hover:before {
+    color: #dc3545;
+    background: rgba(220,53,69,0.1);
 }

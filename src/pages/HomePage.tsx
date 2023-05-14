@@ -3,6 +3,7 @@ import ImageSlider from '../components/ImageSlider';
 import ProductSection from '../components/ProductSection';
 import AboutUsCounter from '../components/AboutUsCounter';
 import InfoCard from '../components/InfoCard';
+import Banner from '../components/Banner';
 import '../style/HomePage.css';
 
 const HomePage: React.FC = () => {
@@ -33,6 +34,8 @@ const HomePage: React.FC = () => {
             </div>
             <ProductSection />
             <AboutUsCounter />
+            <Banner />
+
         </div>
     );
 };

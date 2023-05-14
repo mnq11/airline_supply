@@ -8,9 +8,9 @@ interface Product {
     image: string;
     description: string;
 }
+
 const ProductSection: React.FC = () => {
     const products: Product[] = productsData;
-
 
     const productGridStyle: React.CSSProperties = {
         display: 'grid',
@@ -24,19 +24,21 @@ const ProductSection: React.FC = () => {
         borderRadius: '4px',
         overflow: 'hidden',
         transition: 'transform 0.3s ease',
-        height: '300px', // Set a fixed height for the product card
+        height: '300px',
     };
 
     const imageContainerStyle: React.CSSProperties = {
         position: 'relative',
         overflow: 'hidden',
-        height: '100%', // Set a height of 100% to fill the container
+        height: '100%',
+        transition: 'transform 0.5s ease', // Added transition effect
     };
 
     const imageStyle: React.CSSProperties = {
         width: '100%',
-        height: '100%', // Set the height to 100% to fill the container
-        objectFit: 'cover', // Adjust how the image is resized within the container
+        height: '100%',
+        objectFit: 'cover',
+        transition: 'transform 0.5s ease', // Added transition effect
     };
 
     const overlayStyle: React.CSSProperties = {
@@ -48,17 +50,26 @@ const ProductSection: React.FC = () => {
         backgroundColor: 'rgba(0, 0, 0, 0.7)',
         color: '#fff',
         opacity: 0,
-        transition: 'opacity 0.3s ease',
+        transition: 'all 0.5s ease', // Apply the transition to all properties
+        transform: 'translateY(100%)', // Initially the overlay is translated downward
     };
 
     const handleMouseEnter = (event: React.MouseEvent<HTMLDivElement>) => {
         const overlay = event.currentTarget.querySelector('.overlay') as HTMLElement;
         overlay.style.opacity = '1';
+        overlay.style.transform = 'translateY(0%)'; // Move the overlay upwards to its original position
+
+        const image = event.currentTarget.querySelector('img') as HTMLElement;
+        image.style.transform = 'scale(1.1)'; // Zoom in the image
     };
 
     const handleMouseLeave = (event: React.MouseEvent<HTMLDivElement>) => {
         const overlay = event.currentTarget.querySelector('.overlay') as HTMLElement;
         overlay.style.opacity = '0';
+        overlay.style.transform = 'translateY(100%)'; // Move the overlay downwards
+
+        const image = event.currentTarget.querySelector('img') as HTMLElement;
+        image.style.transform = 'scale(1.0)'; // Reset the image zoom
     };
 
     return (
@@ -83,6 +94,7 @@ const ProductSection: React.FC = () => {
                         </div>
                     </Link>
                 ))}
+
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
-import { GiAirplaneArrival, GiTrophyCup, GiAirplane } from 'react-icons/gi';
+import { GiAirplaneDeparture, GiTrophyCup, GiAirplane } from 'react-icons/gi';
 import { CSSTransition } from 'react-transition-group';
 import '../style/AboutUsSection.css'; // Import the CSS
 
@@ -12,7 +12,7 @@ const AboutUsSection: React.FC = () => {
             description: 'Service Experiences',
         },
         {
-            icon: <GiAirplaneArrival />,
+            icon: <GiAirplaneDeparture />,
             count: 60,
             description: 'Airlines Served',
         },
@@ -73,7 +73,7 @@ const AboutUsSection: React.FC = () => {
     return (
         <div>
             <h1>About Us</h1>
-            <p>Flightparts (Xiamen) Imp. & Exp. Pte Ltd</p>
+            <p>ECHO SWIFT Ltd</p>
             <div style={aboutUsGridStyle}>
                 {aboutUsData.map((data, index) => (
                     <div

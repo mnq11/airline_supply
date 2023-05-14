@@ -2,7 +2,13 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: calc(50% - 10px);
-    background-color: #f5f5f5;
+    background: repeating-linear-gradient(
+            45deg,
+            #5f69ff,
+            #459cf6 10px,
+            #5dd1e8 10px,
+            #eee 20px
+    );
     border-radius: 4px;
     padding: 20px;
     margin-bottom: 20px;
@@ -11,7 +17,12 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+
+    background-size: cover;
 }
+
+/* The rest of your CSS remains the same */
+
 
 .info-card:before {
     content: "";
@@ -26,7 +37,9 @@
     transition: transform 0.3s ease;
     z-index: 1;
 }
-
+.info-card:hover {
+    background-color: #e9ecef;
+}
 .info-card:hover:before {
     transform: scaleY(1);
 }

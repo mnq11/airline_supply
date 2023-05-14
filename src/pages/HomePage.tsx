@@ -40,8 +40,11 @@ const InfoCard: React.FC<{ title: string; description: string }> = ({title, desc
 };
 
 const HomePage: React.FC = () => {
+    const homePageStyle: React.CSSProperties = {
+        marginTop: '-20px', // Add a negative margin to remove the top gap
+    };
     return (
-        <div>
+        <div style={homePageStyle}>
             <ImageSlider/>
             <div style={{ ...cardContainerStyle, marginTop: '-20px' }}>
                 <div style={{display: 'flex', width: '100%', justifyContent: 'space-between'}}>

@@ -3,42 +3,49 @@
     "id": 1,
     "title": "Aluminum foil casserole",
     "image": "/img/product1.jpg",
-    "description": "Our Aluminum Foil Casserole is designed to provide a convenient and efficient solution for serving meals during flights. Its high-quality construction ensures food stays warm and appetizing."
+    "description": "Our Aluminum Foil Casserole is designed to provide a convenient and efficient solution for serving meals during flights. Its high-quality construction ensures food stays warm and appetizing.",
+    "Offer_deals": "High temperature resistant and safe\nLight and economy\nShape, color and logo can be customized"
   },
   {
     "id": 2,
     "title": "Plastic cup",
     "image": "/img/product2.jpg",
-    "description": "Stay hydrated during your journey with our Plastic Cups. Lightweight, sturdy, and perfect for both hot and cold beverages."
+    "description": "Stay hydrated during your journey with our Plastic Cups. Lightweight, sturdy, and perfect for both hot and cold beverages.",
+    "Offer_deals": "Disposable plastic cup\nMaterial: PS\nWeight: 10g/piece\nVolume: 200ml or customized"
   },
   {
     "id": 3,
     "title": "Airsickness bag",
     "image": "/img/product3.jpg",
-    "description": "For the comfort of our passengers, we provide Airsickness Bags designed for ease of use and quick access in case of motion sickness. Your wellness is our priority."
+    "description": "For the comfort of our passengers, we provide Airsickness Bags designed for ease of use and quick access in case of motion sickness. Your wellness is our priority.",
+    "Offer_deals": "Capacity: different sizes & capacities are available\nDesign: different printing & designs are available\nThickness: different paper thickness is available\nMaterial: normal paper & craft paper material options are available"
   },
   {
     "id": 4,
     "title": "Slipper",
     "image": "/img/product4.jpg",
-    "description": "Enjoy your flight in comfort with our cozy slippers. Designed for optimal comfort and warmth, they're perfect for relaxing during long flights."
+    "description": "Enjoy your flight in comfort with our cozy slippers. Designed for optimal comfort and warmth, they're perfect for relaxing during long flights.",
+    "Offer_deals": "Material: 100% polyester coral fleece / velvet / velour\nFinishing: binding with EVA sole or TPR sole\nSize: 29 x 11 cm\nLogo design: embroidery or printing\nSize, color, design can be tailor-made as per request"
   },
   {
     "id": 5,
     "title": "Wool blanket",
     "image": "/img/product5.jpg",
-    "description": "Stay warm and comfortable with our Wool Blanket. Soft and lightweight, it's an essential companion for a pleasant and restful journey."
+    "description": "Stay warm and comfortable with our Wool Blanket. Soft and lightweight, it's an essential companion for a pleasant and restful journey.",
+    "Offer_deals": "Wool Blanket For FC Option\nMaterial: 100% wool / wool + modacrylic blend\nSize: 200x150cm, 190x120cm\nDesign: jacquard, patch label, fringe ends\nQuality inspection: 100% in-house inspection before shipping\nSize, color,design can be tailor-made as per request"
   },
   {
     "id": 6,
     "title": "Economy In-ear Series Headphone",
     "image": "/img/product6.jpg",
-    "description": "Enhance your in-flight entertainment experience with our Economy In-ear Series Headphones. Enjoy movies, music, and more in clear, high-quality audio."
+    "description": "Enhance your in-flight entertainment experience with our Economy In-ear Series Headphones. Enjoy movies, music, and more in clear, high-quality audio.",
+    "Offer_deals": "Suitable for : economy, premium economy, promotional item\nClear and crisp sound\nUltra comfortable silicon earbuds tips\nSuper light and resistant\nStorage space saving\nFully customizable as per customer requirements\nVersatile packing options"
   },
   {
     "id": 7,
     "title": "Tray",
     "image": "/img/product7.jpg",
-    "description": "Our trays are designed for comfort and convenience, making meal times on your journey easier. Durable and easy to handle, they are perfect for in-flight dining."
+    "description": "Our trays are designed for comfort and convenience, making meal times on your journey easier. Durable and easy to handle, they are perfect for in-flight dining.",
+    "Offer_deals": "Material: ABS\nSize: Atlas tray 1/1, 2/3, 1/2 (or customized)\n1/1 tray: 273 x 378 x 15mm\n2/3 tray: 273 x 252 x 15mm\n1/2 tray: 273 x 191 x 15mm"
   }
 ]

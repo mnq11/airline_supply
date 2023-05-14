@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import productsData from '../data/products.json';
-import '../style/ProductSection.css'; // Import custom CSS for ProductSection
+import '../style/ProductSection.css';
 
 interface Product {
     id: number;
@@ -43,7 +43,7 @@ const ProductSection: React.FC = () => {
                             onMouseLeave={handleMouseLeave}
                         >
                             <div className="image-container">
-                                <img className="product-image" src={product.image} alt={product.title} />
+                                <img className="product-image" src={product.image} alt={product.title}/>
                                 <div className="overlay">
                                     <h2>{product.title}</h2>
                                     <p>{product.description}</p>
@@ -53,7 +53,9 @@ const ProductSection: React.FC = () => {
                     </Link>
                 ))}
             </div>
+
         </div>
+
     );
 };
 

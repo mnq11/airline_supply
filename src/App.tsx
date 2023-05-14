@@ -6,6 +6,8 @@ import ProductPage from './pages/ProductPage';
 import CustomerPage from './pages/CustomerPage';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
+import ProductDetail from './pages/ProductDetail';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App: React.FC = () => {
@@ -19,6 +21,8 @@ const App: React.FC = () => {
                     <Route path="/product" element={<ProductPage />} />
                     <Route path="/customer" element={<CustomerPage />} />
                     <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/product/:id" element={<ProductDetail />} />
+
                 </Routes>
             </div>
         </Router>
